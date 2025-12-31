@@ -11,6 +11,7 @@ import SocialLogin from '../components/SocialLogin';
 import TabButtons from '../components/TabButtons';
 import TermsCheckbox from '../components/TermsCheckbox';
 import { createSignupSchema } from '../schemas/authSchema';
+import { signupUser } from '../service/authService';
 import { useAuthStore } from '../store/useAuthStore';
 import type { SignupFormData } from '../types/index';
 
@@ -25,8 +26,9 @@ function SignupPage() {
     resolver: zodResolver(createSignupSchema())
   });
 
-  const submit = (data: SignupFormData) => {
-    console.log('SIGNUP DATA:', data);
+  const submit = async (data: SignupFormData) => {
+    const response = await signupUser(data);
+    return response;
   };
 
   return (

@@ -34,7 +34,7 @@ export const UsersTable = ({ users, isLoading }: Props) => {
     count: rows.length,
     getScrollElement: () => parentRef.current,
     estimateSize: () => (isMobile ? 420 : 120),
-    overscan: 5,
+    overscan: 2,
     measureElement: (el: HTMLElement) => el.getBoundingClientRect().height
   });
 
