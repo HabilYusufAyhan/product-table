@@ -3,7 +3,7 @@
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> A React + TypeScript + Vite application that implements a high‑performance, virtualized user table using @tanstack/react‑table and @tanstack/react‑virtual. The table efficiently renders large datasets with proper column alignment and dynamic row measurement, providing smooth scrolling and responsive layout. It includes feature‑based components, ESLint/Prettier integration, and optimized performance for modern frontend usage.
+> A React + TypeScript + Vite application that implements a high‑performance, virtualized user table using @tanstack/react‑table, @tanstack/react‑virtual and @tanstack/react-query. The table efficiently renders large datasets with proper column alignment and dynamic row measurement, providing smooth scrolling and responsive layout. It includes feature‑based components, ESLint/Prettier integration, and optimized performance for modern frontend usage.
 
 ## Install
 
